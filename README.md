@@ -1,1 +1,7 @@
-# React-knowledge-points
+## React知识点
+
+[1、为什么不能直接修改组件状态](#为什么不能直接修改组件状态)
+
+1. ### 为什么不能直接修改组件状态
+
+    如果直接修改组件的`state`，即`this.state.title = 'hello'`，则不会触发组件重新渲染。想要让组件重新渲染，则需要执行组件的`render`方法，而`react`提供的`setState`方法可以使得组件重新执行一遍`render`方法，所以想要修改`state`则想要使用`setState`方法。
